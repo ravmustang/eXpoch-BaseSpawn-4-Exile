@@ -14,7 +14,7 @@
  * Please read the readme for all information pertaining to this work and its use
  */
 
-private["_display","_spawnButton","_listBox","_listItemIndex","_numberOfSpawnPoints","_randNum","_randData","_randomSpawnIndex"];
+private["_display","_spawnButton","_listBox","_listItemIndex","_numberOfSpawnPoints","_randNum","_randData","_randomSpawnIndex","_territoryPos"];
 disableSerialization;
 ExileClientSpawnLocationSelectionDone = false;
 ExileClientSelectedSpawnLocationMarkerName = "";
@@ -49,11 +49,12 @@ if(eXpochClientPlayerLastBaseSpawn < (diag_tickTime - eXpochBaseRespawnTimeLimit
 		_buildRights = _x getVariable [eXpochBaseSpawnAllowedType, []];
 		if (_playerUID in _buildRights) then
 		{
-			_territoryLevelConfig =_x getVariable ["ExileTerritoryLevel", 0];
-			if(_territoryLevelConfig >= eXpochBaseSpawnLevelRequired)then{
+			_territoryLevelConfig = _x getVariable ["ExileTerritoryLevel", 0];
+			_territoryPos = getPosATL _x;
+			if((_territoryLevelConfig >= eXpochBaseSpawnLevelRequired) && ((getPos ExileClientLastDeathMarker) distance _territoryPos < eXpochBaseSpawnDeadBodyDistLimit)) then{
 				_baseName = _x getVariable ["ExileTerritoryName", ""];
 				eXpochClientPlayerBases pushBack _baseName;
-				createMarker [_baseName,getPosATL _x];
+				createMarker [_baseName,_territoryPos];
 				_listItemIndex = _listBox lbAdd _baseName;
 				_listBox lbSetData [_listItemIndex, _baseName];
 			};
