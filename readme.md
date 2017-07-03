@@ -1,4 +1,4 @@
-![ArmA 1.70](https://img.shields.io/badge/Arma-1.70-blue.svg) ![Exile 1.0.2+ "Kohlrabi"](https://img.shields.io/badge/Exile-1.0.2+%20Kohlrabi-C72651.svg) ![Release](https://img.shields.io/badge/Stable-1.0-blue.svg)
+![ArmA 1.72](https://img.shields.io/badge/Arma-1.72-blue.svg) ![Exile 1.0.3+ "Lemoin"](https://img.shields.io/badge/Exile-1.0.3+%20Lemon-C72651.svg) ![Release](https://img.shields.io/badge/Stable-1.0-blue.svg)
 
 # eXpoch Base Spawn 4 Exile
 ## This has been created for use with Exile
