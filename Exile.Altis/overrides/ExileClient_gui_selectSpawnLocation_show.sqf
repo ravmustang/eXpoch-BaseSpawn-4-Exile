@@ -51,7 +51,7 @@ if(eXpochClientPlayerLastBaseSpawn < (diag_tickTime - eXpochBaseRespawnTimeLimit
 		{
 			_territoryLevelConfig = _x getVariable ["ExileTerritoryLevel", 0];
 			_territoryPos = getPosATL _x;
-			if((_territoryLevelConfig >= eXpochBaseSpawnLevelRequired) && !((getPos ExileClientLastDeathMarker) distance _territoryPos < eXpochBaseSpawnDeadBodyDistLimit)) then{
+			if((_territoryLevelConfig >= eXpochBaseSpawnLevelRequired) && !((getMarkerPos ExileClientLastDeathMarker) distance _territoryPos < eXpochBaseSpawnDeadBodyDistLimit)) then{
 				_baseName = _x getVariable ["ExileTerritoryName", ""];
 				eXpochClientPlayerBases pushBack _baseName;
 				createMarker [_baseName,_territoryPos];

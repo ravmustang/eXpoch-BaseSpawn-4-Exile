@@ -1,4 +1,5 @@
-![ArmA 1.72](https://img.shields.io/badge/Arma-1.72-blue.svg) ![Exile 1.0.3+ "Lemoin"](https://img.shields.io/badge/Exile-1.0.3+%20Lemon-C72651.svg) ![Release](https://img.shields.io/badge/Stable-1.0-blue.svg)
+[![Arma 2.04](https://img.shields.io/badge/Arma-2.04-blue.svg)](https://dev.arma3.com/post/spotrep-00098) [![Exile 1.0.4a "Pineapple"](https://img.shields.io/badge/Exile-1.0.4a%20"Lemon"-yellow.svg)](http://www.exilemod.com/topic/25026-104-pineapple/) 
+
 
 # eXpoch Base Spawn 4 Exile
 ## This has been created for use with Exile
